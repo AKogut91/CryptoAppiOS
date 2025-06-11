@@ -15,9 +15,11 @@ derivatives/exchanges
 Coin Markets
 Derivatives Exchanges
 
+Set the Navigation title to "Crypto Info"
+
 ## Each list item should include:
 Coin image and price (for market coins)
 Exchange name, country, and year (for exchanges)
 
+## API failure
 On API failure, display an Alert with the title: "Request is Failured"
-Set the Navigation title to "Crypto Info"
