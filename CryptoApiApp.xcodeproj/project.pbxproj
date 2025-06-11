@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05AB43132DF9967700DF7379 /* CryptoApiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43122DF9967700DF7379 /* CryptoApiAppApp.swift */; };
+		05AB43132DF9967700DF7379 /* CryptoApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43122DF9967700DF7379 /* CryptoApiApp.swift */; };
 		05AB43152DF9967700DF7379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43142DF9967700DF7379 /* ContentView.swift */; };
 		05AB43172DF9967900DF7379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AB43162DF9967900DF7379 /* Assets.xcassets */; };
 		05AB431A2DF9967900DF7379 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AB43192DF9967900DF7379 /* Preview Assets.xcassets */; };
+		05AB43212DF996F200DF7379 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43202DF996F200DF7379 /* API.swift */; };
+		05AB43232DF9970200DF7379 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43222DF9970200DF7379 /* NetworkService.swift */; };
+		05AB43262DF9971E00DF7379 /* CoinMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43252DF9971E00DF7379 /* CoinMarket.swift */; };
+		05AB43282DF9973900DF7379 /* DerivativeExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43272DF9973900DF7379 /* DerivativeExchange.swift */; };
+		05AB432A2DF99A2000DF7379 /* RequestNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB43292DF99A2000DF7379 /* RequestNetworkService.swift */; };
+		05AB432F2DF99CC600DF7379 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB432E2DF99CC600DF7379 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05AB430F2DF9967700DF7379 /* CryptoApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AB43122DF9967700DF7379 /* CryptoApiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApiAppApp.swift; sourceTree = "<group>"; };
+		05AB43122DF9967700DF7379 /* CryptoApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApiApp.swift; sourceTree = "<group>"; };
 		05AB43142DF9967700DF7379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05AB43162DF9967900DF7379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AB43192DF9967900DF7379 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05AB43202DF996F200DF7379 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		05AB43222DF9970200DF7379 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		05AB43252DF9971E00DF7379 /* CoinMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarket.swift; sourceTree = "<group>"; };
+		05AB43272DF9973900DF7379 /* DerivativeExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativeExchange.swift; sourceTree = "<group>"; };
+		05AB43292DF99A2000DF7379 /* RequestNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestNetworkService.swift; sourceTree = "<group>"; };
+		05AB432E2DF99CC600DF7379 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		05AB43112DF9967700DF7379 /* CryptoApiApp */ = {
 			isa = PBXGroup;
 			children = (
-				05AB43122DF9967700DF7379 /* CryptoApiAppApp.swift */,
+				05AB43242DF9971500DF7379 /* Models */,
+				05AB43312DF99D1100DF7379 /* Services */,
+				05AB43302DF99CD900DF7379 /* ViewModels */,
 				05AB43142DF9967700DF7379 /* ContentView.swift */,
+				05AB43322DF99D4500DF7379 /* Views */,
 				05AB43162DF9967900DF7379 /* Assets.xcassets */,
 				05AB43182DF9967900DF7379 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				05AB43192DF9967900DF7379 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05AB43242DF9971500DF7379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05AB43252DF9971E00DF7379 /* CoinMarket.swift */,
+				05AB43272DF9973900DF7379 /* DerivativeExchange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05AB43302DF99CD900DF7379 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				05AB432E2DF99CC600DF7379 /* CryptoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		05AB43312DF99D1100DF7379 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05AB43202DF996F200DF7379 /* API.swift */,
+				05AB43292DF99A2000DF7379 /* RequestNetworkService.swift */,
+				05AB43222DF9970200DF7379 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05AB43322DF99D4500DF7379 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05AB43122DF9967700DF7379 /* CryptoApiApp.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AB43152DF9967700DF7379 /* ContentView.swift in Sources */,
-				05AB43132DF9967700DF7379 /* CryptoApiAppApp.swift in Sources */,
+				05AB432A2DF99A2000DF7379 /* RequestNetworkService.swift in Sources */,
+				05AB43212DF996F200DF7379 /* API.swift in Sources */,
+				05AB43232DF9970200DF7379 /* NetworkService.swift in Sources */,
+				05AB43282DF9973900DF7379 /* DerivativeExchange.swift in Sources */,
+				05AB432F2DF99CC600DF7379 /* CryptoViewModel.swift in Sources */,
+				05AB43132DF9967700DF7379 /* CryptoApiApp.swift in Sources */,
+				05AB43262DF9971E00DF7379 /* CoinMarket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApiApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 44B387YQ4J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApiApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 44B387YQ4J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
